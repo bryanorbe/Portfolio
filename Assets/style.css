@@ -28,3 +28,41 @@
 
 }
 
+h1 {
+
+}
+
+h2 {
+
+
+}
+
+h3 {
+
+}
+
+.banner {
+    background-image: url("./Assets/Images/banner.png");
+    align-items: center;
+}
+
+.ipFinder {
+    background-image: url("./Assets/Images/ipFinder.jpeg");
+}
+
+.nftGenerator {
+    background-image: url("./Assets/Images/cryptoGenerator.jpeg");
+}
+
+.launchCode {
+    background-image: url("./Assets/Images/launchCode.jpeg");
+}
+
+.voiceDisguise {
+    background-image: url("./Assets/Images/voiceDisguise.jpeg");
+}
+
+.dogCalendar {
+    background-image: url("./Assets/Images/dogCalendar.jpeg");
+}
+
