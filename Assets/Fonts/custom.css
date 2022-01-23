@@ -1,0 +1,48 @@
+/*custom font*/
+
+@font-face {
+    font-family: "libreNormal";
+    src: url("Assets/Fonts/AbhayaLibre-Regular-webfont.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: "libreLight";
+    src: url("Assets/Fonts/AbhayaLibre-Medium-webfont.woff") format('woff');
+    font-weight: lighter;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: "libreBold";
+    src: url("Assets/Fonts/AbhayaLibre-Bold-webfont.woff") format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+
+
+
+
+
+h1 {
+font-family: "libreBold";
+text-align: center;
+font-size: large;
+color: white
+}
+
+h2 {
+font-family: "libreNormal";
+text-align: left;
+font-size: medium;
+color: white;
+}
+
+h3 {
+font-family: "libreLight";
+text-align: center;
+font-size: small;
+}

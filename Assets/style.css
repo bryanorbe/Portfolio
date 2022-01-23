@@ -1,68 +1,188 @@
-/*custom font*/
-
-@font-face {
-    font-family: "libreNormal";
-    src: url("Assets/Fonts/AbhayaLibre-Regular-webfont.woff") format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-@font-face {
-    font-family: "libreLight";
-    src: url("Assets/Fonts/AbhayaLibre-Medium-webfont.woff") format('woff');
-    font-weight: lighter;
-    font-style: normal;
-
-}
-@font-face {
-    font-family: "libreBold";
-    src: url("Assets/Fonts/AbhayaLibre-Bold-webfont.woff") format('woff');
-    font-weight: bold;
-    font-style: normal;
-
-}
-
-
 * {
     margin: 0%;
-
 }
+
+html,body {
+    background: #e0d2b4;
+    margin: 0%;
+    padding: 0;
+    height: 100%;
+    min-height: 100%;
+}
+
+
+.topnav {
+    overflow: hidden;
+    background-color: #3A1F04;
+    margin: 0px;
+    padding: 10px;
+}
+header {
+    padding-right: 2%;
+    padding-top: 4%;
+    display: inline-block;
+    color: burlywood;
+    background: #3A1F04;
+    margin: 0%;
+    height: 7%;
+    width: auto;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+main {
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    flex: auto;
+  }
 
 h1 {
-
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    text-transform: bold;   
+    padding: 0 2%;
+    margin: -1% 0;
+    text-decoration: none;
+    font-size: 50px;
 }
 
-h2 {
-
-
+.topnav a:hover {
+    background-color: burlywood;
+    color: black;
 }
 
-h3 {
+.topnav a:active {
+    background-color: white;
+    color: white;
+}
 
+.topnav-right a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    text-transform: lowercase;   
+    padding: 0 2%;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+nav {
+    display: inline;
+    padding-right: 2%;
+    padding-top: 4%;
+    color: burlywood;
+    background: #3A1F04;
+    margin: 0%;
+    height: 25%;
+    width: 100%;
+}
+.menu ul {
+    float: right;
+    text-align: center;
+    display: inline-flex;
+    list-style-type: none;
+    height: 100%;
+    width: 28%;
+}
+
+.menu ul li {
+    display: inline-block;
+    height: 0%;
+}
+
+.menu ul li a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    text-transform: lowercase;   
+    padding: 0 2%;
+    text-decoration: none;
+    font-size: 30px;
+}
+    /* display: inline-block;
+    color: burlywood;
+    background: #3A1F04;
+    margin: 0%;
+    height: 100%;
+} */
+
+li a:hover:not(.active) {
+    background-color: burlywood;
+}
+
+.divider-small {
+    display: inline-block;
+    border-right: 3px solid white;
+    margin: -3% 2%;
+    padding: 0% 1%;
+    height: 50px;
+}
+
+.divider-large {
+    display: inline-block;
+    border-left: 3px solid #3A1F04;
+    margin: 13px 3px;
+    height: 50px;
+}
+/*images*/
+
+.bnr-img {
+    background-image: url("./Images/banner.jpeg");
+    min-height: fit-content;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.container {
+    position: absolute;
+    margin: 20 px;
+    width: auto
+}
+
+.bannerMain{
+    background-image: url(./Images/bannerMain.png);
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 50%;
+    background: burlywood;
+}
+
+.bannerFlair {
+    background-image: url(../Images/bannerFlair.png);
+}
+
+.columnMain {
+    background-image: url(../Images/ipFinder.jpeg);
+}
+
+.columnOne {
+    background-image: url(../Images/cryptoGenerator.jpeg);
+}
+
+.columnTwo {
+    background-image: url(../Images/voiceDisguise.jpeg);
+}
+
+.columnThree {
+    background-image: url(../Images/launchCode.jpeg);
+}
+
+.columnFour {
+    background-image: url(../Images/dogCalendar.jpeg);
 }
 
 .banner {
-    background-image: url("./Assets/Images/banner.png");
-    align-items: center;
-}
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 50%;
+    background: burlywood;
 
-.ipFinder {
-    background-image: url("./Assets/Images/ipFinder.jpeg");
 }
-
-.nftGenerator {
-    background-image: url("./Assets/Images/cryptoGenerator.jpeg");
-}
-
-.launchCode {
-    background-image: url("./Assets/Images/launchCode.jpeg");
-}
-
-.voiceDisguise {
-    background-image: url("./Assets/Images/voiceDisguise.jpeg");
-}
-
-.dogCalendar {
-    background-image: url("./Assets/Images/dogCalendar.jpeg");
-}
-
