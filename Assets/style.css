@@ -10,35 +10,30 @@ html,body {
     min-height: 100%;
 }
 
-
-.topnav {
-    overflow: hidden;
-    background-color: #3A1F04;
-    margin: 0px;
-    padding: 10px;
-}
 header {
-    padding-right: 2%;
-    padding-top: 4%;
+    padding: 3% 7% 4% 0%;
     display: inline-block;
     color: burlywood;
     background: #3A1F04;
     margin: 0%;
-    height: 7%;
-    width: auto;
+    height: auto;
+    max-width: 100%;
 }
 
 body {
     display: flex;
     flex-direction: column;
-  }
+}
   
   
 main {
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
-    flex: auto;
-  }
+    display: flex;
+    flex-direction: column;
+}
+
+aside {
+    float: left;
+}
 
 h1 {
     float: left;
@@ -49,6 +44,43 @@ h1 {
     margin: -1% 0;
     text-decoration: none;
     font-size: 50px;
+}
+
+h2 {
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    color: #3A1F04;
+    padding: 0 1%;
+    margin: 1% 0;
+    font-size: 30px;
+}
+
+h3 {
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    color: #f2f2f2;
+    padding: 0 1%;
+    margin: 1% 0;
+    font-size: 20px;
+}
+
+.p1 {
+    margin: 5% 10% 10% 5%
+}
+
+.p2 {
+    margin: 10% 5% 5% 10%
+}
+
+/*navigation bar*/
+
+.topnav {
+    overflow: hidden;
+    background-color: #3A1F04;
+    margin: 0px;
+    padding: 10px;
 }
 
 .topnav a:hover {
@@ -79,7 +111,7 @@ nav {
     background: #3A1F04;
     margin: 0%;
     height: 25%;
-    width: 100%;
+    width: 75%;
 }
 .menu ul {
     float: right;
@@ -115,6 +147,8 @@ li a:hover:not(.active) {
     background-color: burlywood;
 }
 
+/*brackets*/
+
 .divider-small {
     display: inline-block;
     border-right: 3px solid white;
@@ -125,34 +159,11 @@ li a:hover:not(.active) {
 
 .divider-large {
     display: inline-block;
-    border-left: 3px solid #3A1F04;
+    border-right: 3px solid #3A1F04;
     margin: 13px 3px;
     height: 50px;
 }
 /*images*/
-
-.bnr-img {
-    background-image: url("./Images/banner.jpeg");
-    min-height: fit-content;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-}
-
-.container {
-    position: absolute;
-    margin: 20 px;
-    width: auto
-}
-
-.bannerMain{
-    background-image: url(./Images/bannerMain.png);
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    height: 50%;
-    background: burlywood;
-}
 
 .bannerFlair {
     background-image: url(../Images/bannerFlair.png);
@@ -178,11 +189,66 @@ li a:hover:not(.active) {
     background-image: url(../Images/dogCalendar.jpeg);
 }
 
+/*image styles*/
+
 .banner {
     position: absolute;
     top: 50%;
     width: 100%;
     height: 50%;
-    background: burlywood;
+    background: none;
 
+}
+
+.bnr-img {
+    background-image: url("./Images/banner.jpeg");
+    min-height: fit-content;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.container {
+    position: absolute;
+    margin: 20 px;
+    width: auto
+}
+
+.bannerMain{
+    max-width: 100%;
+    height: 10px;
+    background-image: url(Images/bannerMain.png);
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 50%;
+    background: burlywood;
+}
+
+.mainContainer {
+    margin: 4rem auto;
+    max-width: 70rem;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.mainHeader {
+    background-image: url(./Images/bannerMain.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: burlywood;
+    padding: 80px 0;
+}
+
+.banner-container {
+    align-items: center;
+    background-color: burlywood;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+    padding: 15px 20px;
 }
